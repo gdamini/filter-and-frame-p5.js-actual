@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>frame and filter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+ 
+ html{
+   text-align: center;
+ }
+ 
+ h3
+  {
+    font-size: 25px !important;
+  }
+
+  .intro-lbl:hover{
+   background-color: darkorange;
+   color: white;
+  }
+  
+  .num_1:hover{
+    color: white;
+    background-color: darkred;
+  }
+
+   .num_1{
+     background-color: black;
+     color: white;
+   }
+
+   .num_2:hover{
+  background-color: black;
+  color: white;
+   } 
+
+   .num_2{
+     color: white;
+     background-color: darkred;
+   }
+
+  canvas {
+  	border:1px solid black;
+  }
+  </style>
+</head>
+
+<body background="depositphotos_206548236-stock-illustration-triangle-pattern-seamless-geometric-wallpaper.jpg">
+<div class="container">
+	<h3 class=" intro-lbl btn btn-warning">Filter and frame</h3>
+	<hr>
+  <label>Filter color:</label>
+  <input id="color_name" placeholder="Enter Filter Color">
+  <br><br>
+  <button onclick="filter_tint()" class="num_1 btn ">Apply Filter</button> 
+  <button onclick="take_snapshot()" class=" num_2 btn ">Take Snapshot</button>
+</div>
+
+<script src="main.js"></script>
+</body>
